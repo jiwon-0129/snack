@@ -1,0 +1,5 @@
+<form action="{%url 'update' review.id %}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">리뷰 수정</button>
+</form>

@@ -1,0 +1,6 @@
+<form action="{%url 'create'%}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">리뷰 작성</button>
+</form>
+<a href="{%url 'review' %}">이전으로 돌아가기</a>

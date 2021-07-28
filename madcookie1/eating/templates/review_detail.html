@@ -1,0 +1,12 @@
+<p>{{ review.eating }}</p>
+<p>{{ review.pub_date }}</p>
+<p>{{ review.image }}</p>
+<p>{{ review.score }}</p>
+<p>{{ review.salty_taste }}</p>
+<p>{{ review.sweet_taste }}</p>
+<p>{{ review.spicy_taste }}</p>
+<p>{{ review.body }}</p>
+<br>
+<br>
+<a href="{% url 'edit' review.id %}">수정</a>
+<a href="{% url 'delete' review.id %}">삭제</a>

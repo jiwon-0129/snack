@@ -1,0 +1,8 @@
+<h1>Review</h1>
+<a href="{% url 'new' %}">새로운 리뷰</a>
+
+{% for review in rate.all %} 
+    <p>{{ review.pub_date }}</p>
+    <p>{{ review.image }}</p>
+    <p>{{ review.summary }}<a href="{% url 'detail' review.id %}">more</a></p>
+{% endfor %}
